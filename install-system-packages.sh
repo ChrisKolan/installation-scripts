@@ -5,6 +5,7 @@ sudo apt install -y bash
 sudo apt install -y bsdutils
 sudo apt install -y ca-certificates
 sudo apt install -y code
+sudo apt install -y curl
 sudo apt install -y dash
 sudo apt install -y diffutils
 sudo apt install -y distro-info
