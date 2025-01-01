@@ -7,13 +7,13 @@ echo '###############################'
 
 echo 'System update and upgrade'
 sudo apt update
-sudo apt -y upgrade
+sudo apt upgrade -y
 echo '###############################'
 
 echo 'Downloading required packages'
-sudo apt -y install git
-sudo apt -y install timeshift
-sudo apt -y install xclip
+sudo apt install -y git
+sudo apt install -y timeshift
+sudo apt install -y xclip
 echo '###############################'
 
 echo 'Setting E-Mail address and name'
