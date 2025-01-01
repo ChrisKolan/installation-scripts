@@ -1,3 +1,4 @@
+clear
 sudo apt install -y apt-transport-https
 sudo apt install -y base-passwd
 sudo apt install -y bash
