@@ -16,3 +16,7 @@ sudo xargs -a package-list/packages-to-install.txt apt install -y --ignore-missi
 echo "Installing syncthing"
 ./shared-scripts/operation-date-time.sh
 ./scripts/install-syncthing.sh
+
+echo "Installing wezterm"
+./shared-scripts/operation-date-time.sh
+./scripts/install-wezterm.sh
