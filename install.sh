@@ -28,3 +28,7 @@ echo "Installing syncthing"
 echo "Installing tailscale"
 ./shared-scripts/operation-date-time.sh
 ./scripts/install-tailscale.sh
+
+echo "Getting AppImages"
+./shared-scripts/operation-date-time.sh
+./scripts/get-app-images.sh
