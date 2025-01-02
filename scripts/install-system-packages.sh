@@ -35,11 +35,6 @@ sudo apt install -y partitionmanager
 sudo apt install -y plasma-discover-backend-flatpak
 sudo apt install -y python3-distutils
 sudo apt install -y shim-signed
-sudo apt install -y sshs
 sudo apt install -y sysvinit-utils
 sudo apt install -y tree
 sudo apt install -y wbritish
-sudo apt install -y wezterm
-sudo apt install -y syncthing # needs additional setup
-sudo apt install -y tailscale # needs additional setup
-sudo apt install -y tailscale-archive-keyring
