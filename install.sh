@@ -32,3 +32,7 @@ echo "Installing tailscale"
 echo "Getting AppImages"
 ./shared-scripts/operation-date-time.sh
 ./scripts/get-app-images.sh
+
+echo "Installing flatpaks"
+./shared-scripts/operation-date-time.sh
+./scripts/install-flatpaks.sh
