@@ -20,3 +20,7 @@ echo "Installing syncthing"
 echo "Installing wezterm"
 ./shared-scripts/operation-date-time.sh
 ./scripts/install-wezterm.sh
+
+echo "Installing SSHS"
+./shared-scripts/operation-date-time.sh
+./scripts/install-sshs.sh

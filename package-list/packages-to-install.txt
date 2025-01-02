@@ -32,7 +32,6 @@ partitionmanager
 plasma-discover-backend-flatpak
 python3-distutils
 shim-signed
-sshs
 sysvinit-utils
 tree
 wbritish
