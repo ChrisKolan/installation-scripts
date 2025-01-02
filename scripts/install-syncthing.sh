@@ -1,3 +1,4 @@
+#!/bin/bash
 # https://apt.syncthing.net/
 
 # Add the release PGP keys:
