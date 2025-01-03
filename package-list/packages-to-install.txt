@@ -3,3 +3,4 @@ krename
 mc
 ncdu
 tree
+zsh
