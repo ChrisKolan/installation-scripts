@@ -17,6 +17,10 @@ echo "Installing wezterm"
 ./shared-scripts/operation-date-time.sh
 ./scripts/install-wezterm.sh
 
+echo "Installing starship"
+./shared-scripts/operation-date-time.sh
+./scripts/install-starship.sh
+
 echo "Installing SSHS"
 ./shared-scripts/operation-date-time.sh
 ./scripts/install-sshs.sh
