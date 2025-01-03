@@ -48,3 +48,7 @@ echo "Installing Flatpaks"
 echo "Installing Visual Studio Code"
 ./shared-scripts/operation-date-time.sh
 ./scripts/install-vs-code.sh
+
+echo "Installing Chezmoi"
+./shared-scripts/operation-date-time.sh
+./scripts/install-chezmoi.sh
