@@ -9,3 +9,7 @@ echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://ap
 
 sudo apt-get update
 sudo apt-get install -y syncthing
+
+mkdir -p ~/Sync/Password-Managers/
+mkdir -p ~/Sync/Portfolio-Performance/
+mkdir ~/Obsidian/
