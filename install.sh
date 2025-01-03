@@ -13,6 +13,10 @@ echo "Installing system packages"
 ./shared-scripts/operation-date-time.sh
 sudo xargs -a package-list/packages-to-install.txt apt install -y --ignore-missing
 
+echo "Installing fonts"
+./shared-scripts/operation-date-time.sh
+./scripts/install-fonts.sh
+
 echo "Installing wezterm"
 ./shared-scripts/operation-date-time.sh
 ./scripts/install-wezterm.sh
