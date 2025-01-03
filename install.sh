@@ -52,3 +52,7 @@ echo "Installing Visual Studio Code"
 echo "Installing Chezmoi"
 ./shared-scripts/operation-date-time.sh
 ./scripts/install-chezmoi.sh
+
+echo "Installing Rclone"
+./shared-scripts/operation-date-time.sh
+./scripts/install-rclone.sh
