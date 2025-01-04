@@ -56,3 +56,7 @@ echo "Installing Chezmoi"
 echo "Installing Rclone"
 ./shared-scripts/operation-date-time.sh
 ./scripts/install-rclone.sh
+
+echo "Setting Zsh as the Default Shell"
+./shared-scripts/operation-date-time.sh
+chsh -s $(which zsh)
