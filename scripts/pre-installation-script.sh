@@ -29,6 +29,7 @@ echo "###############################"
 echo "Copying SSH-Key to clipboard for GitHub"
 xclip -sel clip < ~/.ssh/id_ed25519.pub
 echo "###############################"
+sudo mkdir -p /etc/apt/keyrings
 
 echo "Add key to GitHub. Redirecting now."
 xdg-open https://github.com/settings/keys
