@@ -16,6 +16,7 @@ chmod -R +x *
 ```
 ./install.sh
 ```
+
 5.
 ```
 cd ~/bin

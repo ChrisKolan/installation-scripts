@@ -60,11 +60,3 @@ echo "Installing Rclone"
 echo "Setting Zsh as the Default Shell"
 ./shared-scripts/operation-date-time.sh
 chsh -s $(which zsh)
-
-echo "Installing Neovim"
-./shared-scripts/operation-date-time.sh
-./scripts/install-neovim.sh
-
-echo "Installing NvChad"
-./shared-scripts/operation-date-time.sh
-./scripts/install-nv-chad.sh
