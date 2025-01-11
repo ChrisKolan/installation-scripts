@@ -60,3 +60,18 @@ echo "Installing Rclone"
 echo "Setting Zsh as the Default Shell"
 ./shared-scripts/operation-date-time.sh
 chsh -s $(which zsh)
+
+echo "Installing Neovim"
+./shared-scripts/operation-date-time.sh
+./scripts/install-neovim.sh
+
+echo "Installing NvChad"
+./shared-scripts/operation-date-time.sh
+./scripts/install-nv-chad.sh
+
+echo "Installation complete. Check output for potential errors."
+echo "Close this console and open a new one."
+echo "Continue with the installation of the dotfiles"
+echo "cd ~/bin"
+echo "./chezmoi init https://github.com/ChrisKolan/dotfiles.git"
+echo "./chezmoi apply -v"
