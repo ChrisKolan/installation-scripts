@@ -34,11 +34,11 @@ echo "Installing Tailscale"
 
 echo "Getting AppImages"
 ./shared-scripts/operation-date-time.sh
-./scripts/get-app-images.sh
+./shared-scripts/get-app-images.sh
 
 echo "Installing Flatpaks"
 ./shared-scripts/operation-date-time.sh
-./scripts/install-flatpaks.sh
+./shared-scripts/install-flatpaks.sh
 
 echo "Installing Visual Studio Code"
 ./shared-scripts/operation-date-time.sh
@@ -62,7 +62,7 @@ echo "Installing Neovim"
 
 echo "Installing NvChad"
 ./shared-scripts/operation-date-time.sh
-./scripts/install-nv-chad.sh
+./shared-scripts/install-nv-chad.sh
 
 echo "Installation complete. Check output for potential errors."
 echo "Close this console and open a new one."
