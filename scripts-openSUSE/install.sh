@@ -7,11 +7,11 @@ echo "Performing system update and upgrade"
 
 echo "Invoking pre-installation-script"
 ./shared-scripts/operation-date-time.sh
-./scripts/pre-installation-script.sh
+./scripts-openSUSE/pre-installation-script.sh
 
-# echo "Installing System Packages"
-# ./shared-scripts/operation-date-time.sh
-# sudo xargs -a package-list/packages-to-install.txt apt install -y --ignore-missing
+echo "Installing System Packages"
+./shared-scripts/operation-date-time.sh
+sudo xargs -a package-list/packages-to-install.txt zypper install -y
 
 # echo "Installing Fonts"
 # ./shared-scripts/operation-date-time.sh
