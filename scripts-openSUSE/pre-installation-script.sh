@@ -1,12 +1,5 @@
 #!/bin/bash
 
-echo "System update and package installation"
-echo "######################################"
-
-# Update the system and refresh repositories
-sudo zypper refresh
-sudo zypper update -y
-
 echo "Installing required packages"
 sudo zypper install -y git-core
 sudo zypper install -y xclip
