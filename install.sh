@@ -5,73 +5,24 @@ echo "Performing system update and upgrade"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/system-update-and-upgrade.sh
 
-echo "Invoking pre-installation-script"
-./shared-scripts/operation-date-time.sh
-./scripts/pre-installation-script.sh
+# Detect Linux distribution
+if [ -f /etc/os-release ]; then
+    . /etc/os-release
+    DISTRO=$ID
+else
+    echo "Unable to detect the operating system."
+    exit 1
+fi
 
-echo "Installing System Packages"
-./shared-scripts/operation-date-time.sh
-sudo xargs -a package-list/packages-to-install.txt apt install -y --ignore-missing
+echo "Detected distribution: $DISTRO"
+echo "Performing installation..."
+echo "################################"
 
-echo "Installing Fonts"
-./shared-scripts/operation-date-time.sh
-./scripts/install-fonts.sh
-
-echo "Installing Wezterm"
-./shared-scripts/operation-date-time.sh
-./scripts/install-wezterm.sh
-
-echo "Installing Starship"
-./shared-scripts/operation-date-time.sh
-./scripts/install-starship.sh
-
-echo "Installing SSHS"
-./shared-scripts/operation-date-time.sh
-./scripts/install-sshs.sh
-
-echo "Installing Syncthing"
-./shared-scripts/operation-date-time.sh
-./scripts/install-syncthing.sh
-
-echo "Installing Tailscale"
-./shared-scripts/operation-date-time.sh
-./scripts/install-tailscale.sh
-
-echo "Getting AppImages"
-./shared-scripts/operation-date-time.sh
-./scripts/get-app-images.sh
-
-echo "Installing Flatpaks"
-./shared-scripts/operation-date-time.sh
-./scripts/install-flatpaks.sh
-
-echo "Installing Visual Studio Code"
-./shared-scripts/operation-date-time.sh
-./scripts/install-vs-code.sh
-
-echo "Installing Chezmoi"
-./shared-scripts/operation-date-time.sh
-./scripts/install-chezmoi.sh
-
-echo "Installing Rclone"
-./shared-scripts/operation-date-time.sh
-./scripts/install-rclone.sh
-
-echo "Setting Zsh as the Default Shell"
-./shared-scripts/operation-date-time.sh
-chsh -s $(which zsh)
-
-echo "Installing Neovim"
-./shared-scripts/operation-date-time.sh
-./scripts/install-neovim.sh
-
-echo "Installing NvChad"
-./shared-scripts/operation-date-time.sh
-./scripts/install-nv-chad.sh
-
-echo "Installation complete. Check output for potential errors."
-echo "Close this console and open a new one."
-echo "Continue with the installation of the dotfiles"
-echo "cd ~/bin"
-echo "./chezmoi init https://github.com/ChrisKolan/dotfiles.git"
-echo "./chezmoi apply -v"
+if [ "$DISTRO" == "debian" ] || [ "$DISTRO" == "ubuntu" ]; then
+    ./scripts/install.sh
+elif [ "$DISTRO" == "opensuse-tumbleweed" ] || [ "$DISTRO" == "suse" ]; then
+    ./scripts-openSUSE/install.sh
+else
+    echo "Unsupported distribution: $DISTRO"
+    exit 1
+fi
