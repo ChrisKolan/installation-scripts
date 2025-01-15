@@ -15,7 +15,7 @@ sudo xargs -a package-list/packages-to-install.txt apt install -y --ignore-missi
 
 echo "Installing Fonts"
 ./shared-scripts/operation-date-time.sh
-./scripts/install-fonts.sh
+./shared-scripts/install-fonts.sh
 
 echo "Installing Wezterm"
 ./shared-scripts/operation-date-time.sh

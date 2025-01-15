@@ -13,9 +13,9 @@ echo "Installing System Packages"
 ./shared-scripts/operation-date-time.sh
 sudo xargs -a package-list/packages-to-install-openSUSE.txt zypper install -y
 
-# echo "Installing Fonts"
-# ./shared-scripts/operation-date-time.sh
-# ./scripts/install-fonts.sh
+echo "Installing Fonts"
+./shared-scripts/operation-date-time.sh
+./shared-scripts/install-fonts.sh
 
 # echo "Installing Wezterm"
 # ./shared-scripts/operation-date-time.sh
