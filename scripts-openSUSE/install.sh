@@ -17,10 +17,6 @@ echo "Installing Fonts"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/install-fonts.sh
 
-# echo "Installing Wezterm"
-# ./shared-scripts/operation-date-time.sh
-# ./scripts/install-wezterm.sh
-
 # echo "Installing Starship"
 # ./shared-scripts/operation-date-time.sh
 # ./scripts/install-starship.sh

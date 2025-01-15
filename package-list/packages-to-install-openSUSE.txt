@@ -6,3 +6,4 @@ zsh
 ripgrep
 gcc
 make
+wezterm

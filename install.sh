@@ -5,6 +5,10 @@ echo "Performing system update and upgrade"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/system-update-and-upgrade.sh
 
+echo "Installing homebrew"
+./shared-scripts/operation-date-time.sh
+./shared-scripts/install-homebrew.sh
+
 # Detect Linux distribution
 if [ -f /etc/os-release ]; then
     . /etc/os-release
