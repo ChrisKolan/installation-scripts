@@ -1,0 +1,8 @@
+krename
+mc
+ncdu
+tree
+zsh
+ripgrep
+gcc
+make

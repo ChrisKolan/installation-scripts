@@ -11,7 +11,7 @@ echo "Invoking pre-installation-script"
 
 echo "Installing System Packages"
 ./shared-scripts/operation-date-time.sh
-sudo xargs -a package-list/packages-to-install.txt zypper install -y
+sudo xargs -a package-list/packages-to-install-openSUSE.txt zypper install -y
 
 # echo "Installing Fonts"
 # ./shared-scripts/operation-date-time.sh
