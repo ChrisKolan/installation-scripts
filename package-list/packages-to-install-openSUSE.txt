@@ -7,3 +7,4 @@ ripgrep
 gcc
 make
 wezterm
+starship
