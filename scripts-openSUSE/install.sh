@@ -12,6 +12,14 @@ echo "Installing Fonts"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/install-fonts.sh
 
+echo "Installing Syncthing"
+./shared-scripts/operation-date-time.sh
+./scripts-openSUSE/install-syncthing.sh
+
+echo "Installing Tailscale"
+./shared-scripts/operation-date-time.sh
+./scripts-openSUSE/install-tailscale.sh
+
 echo "Installing homebrew packages"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/install-homebrew-packages.sh
