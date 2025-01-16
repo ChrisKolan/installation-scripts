@@ -11,7 +11,7 @@ echo "Getting AppImages"
 
 echo "Installing flatpaks"
 ./shared-scripts/operation-date-time.sh
-./shared-scripts/create-directories.sh
+./shared-scripts/install-flatpaks.sh
 
 echo "Installing homebrew"
 ./shared-scripts/operation-date-time.sh
