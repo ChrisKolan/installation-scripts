@@ -9,6 +9,10 @@ echo "Installing homebrew"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/install-homebrew.sh
 
+echo "Creating directories"
+./shared-scripts/operation-date-time.sh
+./shared-scripts/create-directories.sh
+
 # Detect Linux distribution
 if [ -f /etc/os-release ]; then
     . /etc/os-release
