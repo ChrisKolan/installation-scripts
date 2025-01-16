@@ -8,3 +8,6 @@ echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://ap
 
 sudo apt-get update
 sudo apt-get install -y syncthing
+
+sudo systemctl enable syncthing@chris.service
+sudo systemctl start syncthing@chris.service
