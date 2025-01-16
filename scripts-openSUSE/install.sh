@@ -21,7 +21,7 @@ echo "Installing Flatpaks"
 ./shared-scripts/install-flatpaks.sh
 
 echo "Installing homebrew packages"
-./shared-scripts/operating-date-time.sh
+./shared-scripts/operation-date-time.sh
 ./shared-scripts/install-homebrew-packages.sh
 
 echo "Installing Visual Studio Code"
