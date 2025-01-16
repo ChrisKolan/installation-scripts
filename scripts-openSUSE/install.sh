@@ -20,6 +20,10 @@ echo "Installing Tailscale"
 ./shared-scripts/operation-date-time.sh
 ./scripts-openSUSE/install-tailscale.sh
 
+echo "Installing Rclone"
+./shared-scripts/operation-date-time.sh
+./scripts-openSUSE/install-rclone.sh
+
 echo "Installing homebrew packages"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/install-homebrew-packages.sh
