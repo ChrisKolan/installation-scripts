@@ -4,3 +4,6 @@
 sudo zypper addrepo https://download.opensuse.org/repositories/openSUSE:Factory/standard/openSUSE:Factory.repo
 sudo zypper refresh
 sudo zypper install -y tailscale
+
+sudo systemctl enable tailscaled
+sudo systemctl start tailscaled

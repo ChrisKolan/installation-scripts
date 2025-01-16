@@ -41,8 +41,12 @@ echo "Installing NvChad"
 ./shared-scripts/install-nv-chad.sh
 
 echo "Installation complete. Check output for potential errors."
-echo "Close this console and open a new one."
+echo "You can close this console and open a new one using Wezterm."
+echo "========================================================="
 echo "Continue with the installation of the dotfiles"
 echo "cd ~/bin"
 echo "./chezmoi init https://github.com/ChrisKolan/dotfiles.git"
 echo "./chezmoi apply -v"
+echo "========================================================="
+echo "Finish configuration of Tailscale by running:"
+echo "sudo tailscale up --accept-routes"
