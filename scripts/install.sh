@@ -32,10 +32,6 @@ echo "Installing Tailscale"
 ./shared-scripts/operation-date-time.sh
 ./scripts/install-tailscale.sh
 
-echo "Getting AppImages"
-./shared-scripts/operation-date-time.sh
-./shared-scripts/get-app-images.sh
-
 echo "Installing Visual Studio Code"
 ./shared-scripts/operation-date-time.sh
 ./scripts/install-vs-code.sh

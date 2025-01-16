@@ -5,13 +5,17 @@ echo "Performing system update and upgrade"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/system-update-and-upgrade.sh
 
-echo "Installing homebrew"
+echo "Getting AppImages"
 ./shared-scripts/operation-date-time.sh
-./shared-scripts/install-homebrew.sh
+./shared-scripts/get-app-images.sh
 
 echo "Installing flatpaks"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/create-directories.sh
+
+echo "Installing homebrew"
+./shared-scripts/operation-date-time.sh
+./shared-scripts/install-homebrew.sh
 
 echo "Creating directories"
 ./shared-scripts/operation-date-time.sh
