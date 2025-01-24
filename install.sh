@@ -34,7 +34,7 @@ echo "Detected distribution: $DISTRO"
 echo "Performing installation..."
 echo "################################"
 
-if [ "$DISTRO" == "debian" ] || [ "$DISTRO" == "ubuntu" ]; then
+if [ "$DISTRO" == "debian" ] || [ "$DISTRO" == "ubuntu" ] || [ "$DISTRO" == "tuxedo" ]; then
     ./scripts/install.sh
 elif [ "$DISTRO" == "opensuse-tumbleweed" ] || [ "$DISTRO" == "suse" ]; then
     ./scripts-openSUSE/install.sh
