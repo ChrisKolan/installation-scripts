@@ -36,9 +36,9 @@ echo "Installing Chezmoi"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/install-chezmoi.sh
 
-echo "Setting Zsh as the Default Shell"
-./shared-scripts/operation-date-time.sh
-chsh -s $(which zsh)
+# echo "Setting Zsh as the Default Shell"
+# ./shared-scripts/operation-date-time.sh
+# chsh -s $(which zsh)
 
 echo "Installing NvChad"
 ./shared-scripts/operation-date-time.sh
