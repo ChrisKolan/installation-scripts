@@ -7,4 +7,5 @@ brew install gcc
 brew install hello
 brew install sshs
 #brew install rclone
+brew install chezmoi
 brew install neovim

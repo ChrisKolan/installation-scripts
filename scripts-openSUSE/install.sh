@@ -24,17 +24,17 @@
 # ./shared-scripts/operation-date-time.sh
 # ./scripts-openSUSE/install-rclone.sh
 
-# echo "Installing homebrew packages"
-# ./shared-scripts/operation-date-time.sh
-# ./shared-scripts/install-homebrew-packages.sh
+echo "Installing homebrew packages"
+./shared-scripts/operation-date-time.sh
+./shared-scripts/install-homebrew-packages.sh
 
 # echo "Installing Visual Studio Code"
 # ./shared-scripts/operation-date-time.sh
 # ./scripts-openSUSE/install-vs-code.sh
 
-echo "Installing Chezmoi"
-./shared-scripts/operation-date-time.sh
-./shared-scripts/install-chezmoi.sh
+# echo "Installing Chezmoi"
+# ./shared-scripts/operation-date-time.sh
+# ./shared-scripts/install-chezmoi.sh
 
 # echo "Setting Zsh as the Default Shell"
 # ./shared-scripts/operation-date-time.sh
