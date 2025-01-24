@@ -13,7 +13,7 @@ echo "Detected distribution: $DISTRO"
 echo "Updating and upgrading the system"
 echo "################################"
 
-if [ "$DISTRO" == "debian" ] || [ "$DISTRO" == "ubuntu" ]; then
+if [ "$DISTRO" == "debian" ] || [ "$DISTRO" == "ubuntu" ] || [ "$DISTRO" == "tuxedo" ]; then
     sudo apt update
     sudo apt upgrade -y
 elif [ "$DISTRO" == "opensuse-tumbleweed" ] || [ "$DISTRO" == "suse" ]; then
