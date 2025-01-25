@@ -24,6 +24,10 @@
 # ./shared-scripts/operation-date-time.sh
 # ./scripts-openSUSE/install-rclone.sh
 
+echo "Installing homebrew"
+./shared-scripts/operation-date-time.sh
+./shared-scripts/install-homebrew.sh
+
 echo "Installing homebrew packages"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/install-homebrew-packages.sh

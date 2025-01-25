@@ -32,6 +32,14 @@ echo "Installing Tailscale"
 ./shared-scripts/operation-date-time.sh
 ./scripts/install-tailscale.sh
 
+echo "Installing homebrew"
+./shared-scripts/operation-date-time.sh
+./shared-scripts/install-homebrew.sh
+
+echo "Installing homebrew packages"
+./shared-scripts/operation-date-time.sh
+./shared-scripts/install-homebrew-packages.sh
+
 echo "Installing Visual Studio Code"
 ./shared-scripts/operation-date-time.sh
 ./scripts/install-vs-code.sh
