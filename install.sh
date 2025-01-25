@@ -1,9 +1,9 @@
 #!/bin/bash
 clear
 
-# echo "Performing system update and upgrade"
-# ./shared-scripts/operation-date-time.sh
-# ./shared-scripts/system-update-and-upgrade.sh
+echo "Performing system update and upgrade"
+./shared-scripts/operation-date-time.sh
+./shared-scripts/system-update-and-upgrade.sh
 
 # echo "Getting AppImages"
 # ./shared-scripts/operation-date-time.sh
