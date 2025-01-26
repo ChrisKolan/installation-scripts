@@ -5,6 +5,5 @@ export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 brew install hello
 brew install sshs
-#brew install rclone
 brew install chezmoi
 brew install neovim
