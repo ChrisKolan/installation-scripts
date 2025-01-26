@@ -25,6 +25,3 @@ echo "######################################"
 echo "Copying SSH key to clipboard for GitHub"
 xclip -sel clip < ~/.ssh/id_ed25519.pub
 echo "######################################"
-
-echo "Opening GitHub to add SSH key"
-xdg-open https://github.com/settings/keys

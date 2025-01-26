@@ -44,10 +44,10 @@ echo "Setting Zsh as the Default Shell"
 ./shared-scripts/operation-date-time.sh
 chsh -s $(which zsh)
 
+echo "========================================================="
 echo "Installation complete. Check output for potential errors."
 echo "========================================================="
-echo "Opening credentials file."
-echo "Paste ssh public key into the file and use it after login."
-kate ~/.ssh/data.txt
-echo "Finish configuration of Tailscale by running:"
-echo "sudo tailscale up --accept-routes"
+
+echo "Final steps"
+./shared-scripts/operation-date-time.sh
+./shared-scripts/final-steps.sh
