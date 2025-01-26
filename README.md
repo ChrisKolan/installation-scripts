@@ -2,30 +2,21 @@ Execution steps:
 
 1.
 ```
-git clone https://github.com/ChrisKolan/installation-scripts.git
+cd ~/Downloads
 ```
 2.
 ```
-cd installation-scripts
+git clone https://github.com/ChrisKolan/installation-scripts.git
 ```
 3.
 ```
-chmod -R +x *
+cd installation-scripts
 ```
 4.
 ```
-./install.sh
+chmod -R +x *
 ```
-
 5.
 ```
-cd ~/bin
-```
-6.
-```
-./chezmoi init https://github.com/ChrisKolan/dotfiles.git
-```
-7.
-```
-./chezmoi apply -v
+./install.sh
 ```

@@ -32,20 +32,20 @@ echo "Installing Visual Studio Code"
 ./shared-scripts/operation-date-time.sh
 ./scripts-openSUSE/install-vs-code.sh
 
-# echo "Setting Zsh as the Default Shell"
-# ./shared-scripts/operation-date-time.sh
-# chsh -s $(which zsh)
-
 echo "Installing NvChad"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/install-nv-chad.sh
 
+echo "Installalling dotfiles"
+./shared-scripts/operation-date-time.sh
+./shared-scripts/install-dotfiles.sh
+
+echo "Setting Zsh as the Default Shell"
+./shared-scripts/operation-date-time.sh
+chsh -s $(which zsh)
+
 echo "Installation complete. Check output for potential errors."
-echo "You can close this console and open a new one using Wezterm."
 echo "========================================================="
-echo "Continue with the installation of the dotfiles"
-echo "chezmoi init https://github.com/ChrisKolan/dotfiles.git"
-echo "chezmoi apply -v"
-echo "========================================================="
+echo "After logging into GitHub"
 echo "Finish configuration of Tailscale by running:"
 echo "sudo tailscale up --accept-routes"
