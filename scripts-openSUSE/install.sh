@@ -46,6 +46,8 @@ chsh -s $(which zsh)
 
 echo "Installation complete. Check output for potential errors."
 echo "========================================================="
-echo "After logging into GitHub"
+echo "Opening credentials file."
+echo "Paste ssh public key into the file and use it after login."
+kate ~/.ssh/data.txt
 echo "Finish configuration of Tailscale by running:"
 echo "sudo tailscale up --accept-routes"
