@@ -9,3 +9,4 @@ make
 wezterm
 starship
 btop
+rclone
