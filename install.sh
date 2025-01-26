@@ -5,6 +5,10 @@ echo "Performing system update and upgrade"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/system-update-and-upgrade.sh
 
+echo "Creating directories"
+./shared-scripts/operation-date-time.sh
+./shared-scripts/create-directories.sh
+
 echo "Getting AppImages"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/get-app-images.sh
@@ -12,10 +16,6 @@ echo "Getting AppImages"
 echo "Installing flatpaks"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/install-flatpaks.sh
-
-echo "Creating directories"
-./shared-scripts/operation-date-time.sh
-./shared-scripts/create-directories.sh
 
 # Detect Linux distribution
 if [ -f /etc/os-release ]; then
