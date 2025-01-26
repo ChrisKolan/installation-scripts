@@ -5,13 +5,13 @@ echo "Performing system update and upgrade"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/system-update-and-upgrade.sh
 
-# echo "Getting AppImages"
-# ./shared-scripts/operation-date-time.sh
-# ./shared-scripts/get-app-images.sh
+echo "Getting AppImages"
+./shared-scripts/operation-date-time.sh
+./shared-scripts/get-app-images.sh
 
-# echo "Installing flatpaks"
-# ./shared-scripts/operation-date-time.sh
-# ./shared-scripts/install-flatpaks.sh
+echo "Installing flatpaks"
+./shared-scripts/operation-date-time.sh
+./shared-scripts/install-flatpaks.sh
 
 echo "Creating directories"
 ./shared-scripts/operation-date-time.sh
