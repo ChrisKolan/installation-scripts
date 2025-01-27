@@ -10,3 +10,4 @@ wezterm
 starship
 btop
 rclone
+fastfetch
