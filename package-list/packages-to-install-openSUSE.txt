@@ -11,3 +11,4 @@ starship
 btop
 rclone
 fastfetch
+opi
