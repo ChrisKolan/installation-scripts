@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "Disabling anonymous analytics in Homebrew"
+source ~/.bashrc
+brew analytics off
+
 echo "Opening browser for Syncting and GitHub configuration"
 xdg-open http://127.0.0.1:8384
 xdg-open https://github.com/settings/keys
