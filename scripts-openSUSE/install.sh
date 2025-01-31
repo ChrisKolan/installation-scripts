@@ -32,6 +32,10 @@ echo "Installing Visual Studio Code"
 ./shared-scripts/operation-date-time.sh
 ./scripts-openSUSE/install-vs-code.sh
 
+echo "Installing application style Klassy"
+./shared-scripts/operation-date-time.sh
+./scripts-openSUSE/install-application-style-klassy.sh
+
 echo "Installing NvChad"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/install-nv-chad.sh
