@@ -7,6 +7,7 @@ sudo zypper install -y findutils
 echo "######################################"
 
 echo "Installing codecs"
+source ~/.bashrc
 opi codecs
 
 echo "Setting E-Mail address and name for git"
