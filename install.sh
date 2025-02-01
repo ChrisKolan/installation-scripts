@@ -1,20 +1,17 @@
 #!/bin/bash
 clear
+source ./shared-scripts/display-message.sh
 
-echo "Performing system update and upgrade"
-./shared-scripts/operation-date-time.sh
+current_task "Performing system update and upgrade"
 ./shared-scripts/system-update-and-upgrade.sh
 
-echo "Creating directories"
-./shared-scripts/operation-date-time.sh
+current_task "Creating directories"
 ./shared-scripts/create-directories.sh
 
-echo "Getting AppImages"
-./shared-scripts/operation-date-time.sh
+current_task "Getting AppImages"
 ./shared-scripts/get-app-images.sh
 
-echo "Installing flatpaks"
-./shared-scripts/operation-date-time.sh
+current_task "Installing flatpaks"
 ./shared-scripts/install-flatpaks.sh
 
 # Detect Linux distribution

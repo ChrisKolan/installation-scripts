@@ -1,65 +1,52 @@
 #!/bin/bash
 
-echo "Invoking pre-installation-script"
-./shared-scripts/operation-date-time.sh
+source ./shared-scripts/display-message.sh
+
+current_task "Invoking pre-installation-script"
 ./scripts-openSUSE/pre-installation-script.sh
 
-echo "Installing System Packages"
-./shared-scripts/operation-date-time.sh
+current_task "Installing System Packages"
 sudo xargs -a package-list/packages-to-install-openSUSE.txt zypper install -y
 
-echo "Installing codecs"
-./shared-scripts/operation-date-time.sh
+current_task "Installing codecs"
 ./scripts-openSUSE/install-codecs.sh
 
-echo "Installing Fonts"
-./shared-scripts/operation-date-time.sh
+current_task "Installing Fonts"
 ./shared-scripts/install-fonts.sh
 
-echo "Installing Syncthing"
-./shared-scripts/operation-date-time.sh
+current_task "Installing Syncthing"
 ./scripts-openSUSE/install-syncthing.sh
 
-echo "Installing Tailscale"
-./shared-scripts/operation-date-time.sh
+current_task "Installing Tailscale"
 ./scripts-openSUSE/install-tailscale.sh
 
-echo "Installing homebrew"
-./shared-scripts/operation-date-time.sh
+current_task "Installing homebrew"
 ./shared-scripts/install-homebrew.sh
 
-echo "Installing homebrew packages"
-./shared-scripts/operation-date-time.sh
+current_task "Installing homebrew packages"
 ./shared-scripts/install-homebrew-packages.sh
 
-echo "Installing Visual Studio Code"
-./shared-scripts/operation-date-time.sh
+current_task "Installing Visual Studio Code"
 ./scripts-openSUSE/install-vs-code.sh
 
-echo "Installing Anki"
-./shared-scripts/operation-date-time.sh
+current_task "Installing Anki"
 ./scripts-openSUSE/install-anki.sh
 
-echo "Installing application style Klassy"
-./shared-scripts/operation-date-time.sh
+current_task "Installing application style Klassy"
 ./scripts-openSUSE/install-application-style-klassy.sh
 
-echo "Installing NvChad"
-./shared-scripts/operation-date-time.sh
+current_task "Installing NvChad"
 ./shared-scripts/install-nv-chad.sh
 
-echo "Installalling dotfiles"
-./shared-scripts/operation-date-time.sh
+current_task "Installalling dotfiles"
 ./shared-scripts/install-dotfiles.sh
 
-echo "Setting Zsh as the Default Shell"
-./shared-scripts/operation-date-time.sh
+current_task "Setting Zsh as the Default Shell"
 chsh -s $(which zsh)
 
 echo "========================================================="
 echo "Installation complete. Check output for potential errors."
 echo "========================================================="
 
-echo "Final steps"
-./shared-scripts/operation-date-time.sh
+current_task "Final steps"
 ./shared-scripts/final-steps.sh
