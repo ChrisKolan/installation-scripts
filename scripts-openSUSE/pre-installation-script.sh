@@ -6,9 +6,6 @@ sudo zypper install -y xclip
 sudo zypper install -y findutils
 echo "######################################"
 
-echo "Installing codecs"
-opi codecs
-
 echo "Setting E-Mail address and name for git"
 echo "Enter E-Mail address:"
 read EMAIL

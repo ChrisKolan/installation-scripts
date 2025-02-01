@@ -8,6 +8,10 @@ echo "Installing System Packages"
 ./shared-scripts/operation-date-time.sh
 sudo xargs -a package-list/packages-to-install-openSUSE.txt zypper install -y
 
+echo "Installing codecs"
+./shared-scripts/operation-date-time.sh
+./scripts-openSUSE/install-codecs.sh
+
 echo "Installing Fonts"
 ./shared-scripts/operation-date-time.sh
 ./shared-scripts/install-fonts.sh
