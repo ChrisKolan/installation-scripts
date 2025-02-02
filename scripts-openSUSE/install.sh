@@ -41,6 +41,9 @@ current_task "Installing NvChad"
 current_task "Installalling dotfiles"
 ./shared-scripts/install-dotfiles.sh
 
+current_task "Configuring autofs"
+./shared-scripts/configure-autofs.sh
+
 current_task "Setting Zsh as the Default Shell"
 chsh -s $(which zsh)
 
