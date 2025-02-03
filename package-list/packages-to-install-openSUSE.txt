@@ -13,3 +13,4 @@ rclone
 fastfetch
 opi
 autofs
+tmux

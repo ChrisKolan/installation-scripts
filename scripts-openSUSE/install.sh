@@ -38,6 +38,9 @@ current_task "Installing application style Klassy"
 current_task "Installing NvChad"
 ./shared-scripts/install-nv-chad.sh
 
+current_task "Installing tmux plugins"
+./shared-scripts/install-tmux-plugins.sh
+
 current_task "Installalling dotfiles"
 ./shared-scripts/install-dotfiles.sh
 
