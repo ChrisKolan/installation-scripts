@@ -16,3 +16,4 @@ autofs
 tmux
 links
 vitetris
+darktable
