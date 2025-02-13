@@ -18,3 +18,4 @@ links
 vitetris
 darktable
 exiftool
+ImageMagick
