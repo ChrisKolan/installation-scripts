@@ -1,5 +1,4 @@
-> [!NOTE] Before running the script
-> Check in the virtual machine if there are no errors when the script is executed. Additionally update the AppImage versions to the latest.
+Before running the script: check in the virtual machine if there are no errors when the script is executed. Additionally update the AppImage versions to the latest.
 
 AppImage versions to check:
 - https://github.com/obsidianmd/obsidian-releases/releases
