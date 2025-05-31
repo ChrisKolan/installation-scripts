@@ -32,9 +32,6 @@ current_task "Installing Visual Studio Code"
 current_task "Installing Anki"
 ./scripts-openSUSE/install-anki.sh
 
-current_task "Installing application style Klassy"
-./scripts-openSUSE/install-application-style-klassy.sh
-
 current_task "Installing NvChad"
 ./shared-scripts/install-nv-chad.sh
 
