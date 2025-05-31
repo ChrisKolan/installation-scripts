@@ -1,3 +1,5 @@
+Before running the script: check in the virtual machine if there are no errors when the script is executed. Additionally update the AppImage versions to the latest.
+
 Execution steps:
 
 1.
