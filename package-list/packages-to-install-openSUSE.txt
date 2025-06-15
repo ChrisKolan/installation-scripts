@@ -20,3 +20,7 @@ darktable
 exiftool
 ImageMagick
 gmic
+wayland-devel
+libxkbcommon-devel
+Mesa-libGL-devel
+libpng16-devel
