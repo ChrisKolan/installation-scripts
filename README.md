@@ -2,7 +2,6 @@ Before running the script: check in the virtual machine if there are no errors w
 
 AppImage versions to check:
 - https://github.com/obsidianmd/obsidian-releases/releases
-- https://github.com/keepassxreboot/keepassxc/releases
 - https://github.com/probonopd/go-appimage/releases
 - https://github.com/rustdesk/rustdesk/releases
 
