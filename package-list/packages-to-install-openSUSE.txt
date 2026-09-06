@@ -24,3 +24,4 @@ wayland-devel
 libxkbcommon-devel
 Mesa-libGL-devel
 libpng16-devel
+keepassxc
