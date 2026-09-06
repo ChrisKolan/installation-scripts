@@ -25,3 +25,5 @@ libxkbcommon-devel
 Mesa-libGL-devel
 libpng16-devel
 keepassxc
+android-tools
+android-udev-rules
